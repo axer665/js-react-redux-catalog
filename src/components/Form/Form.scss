@@ -1,0 +1,48 @@
+.app__form {
+  padding: .5em;
+}
+
+.form__wrap {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.form {
+  
+  &__item {
+    &:nth-child(n + 2) {
+      margin-top: 1em;
+    }
+  }
+  .item {
+    &__input {
+      border: 2px solid #000;
+      font-size: 1.2rem;
+      padding: 0.3em;
+      width: 50%;
+    }
+    &__label {
+      display: inline-block;
+      padding: .25em;
+      margin-left: 1em;
+      width: 210px;
+    }
+  }
+  &__btn {
+    margin-top: 1em;
+    padding: .5em 2em;
+    border: 2px solid #000;
+    font-size: inherit;
+    background: inherit;
+    &:hover {
+      transition: background-color 0.5s;
+      background-color: #ffcc00;
+    }
+  }
+}
+
+.form__btn.cancel {
+  position: absolute;
+  left: 220px;
+  bottom: 10px;
+}

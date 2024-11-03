@@ -1,0 +1,18 @@
+@use "vars.scss" as vars;
+@use "mystyle.scss" as mystyle;
+@use "iconfont.scss" as iconfont;
+
+.container {
+  width: 1032px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.link {
+  padding: .3em .5em;
+  font-size: 1.3rem;
+  a {
+    color: vars.$primary-color;
+  }
+}
+

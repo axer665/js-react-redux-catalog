@@ -1,0 +1,5 @@
+export enum Actions {
+  CHANGE_FIELD = 'CHANGE_FIELD',
+  RESET_FORM = 'RESET_FORM',
+  SAVE_ITEM = 'SAVE_ITEM'
+}
