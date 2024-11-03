@@ -1,50 +1,18 @@
-# React + TypeScript + Vite
+Каталог
+===
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот проект не предполагает взаимодействия по протоколу HTTP и наличия серверной части.
 
-Currently, two official plugins are available:
+В этой задаче вы выступите в роли аналитика и проектировщика. На базе существующего сервиса вам самостоятельно необходимо спроектировать и реализовать на базе Redux форму добавления и отображения товаров. Важно: нас интересует только добавление и отображаение*.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Примечание*: редактирование и удаление делать не нужно.
 
-## Expanding the ESLint configuration
+Задача: разработайте на базе Redux форму добавления и отображения товаров как в Яндекс.Маркете.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Обратите внимание: на базе примера с лекции вы должны сами выступить в роли проектировщика и решить, какие поля и в каком виде — строка, число, boolean — вы будете хранить.
 
-- Configure the top-level `parserOptions` property like this:
+Задача вашего приложения — проектирование формы добавления и реализация списка для отображения:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+![](assets/result.png)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Скриншот сервиса [Яндекс.Маркет](https://market.yandex.ru/).
